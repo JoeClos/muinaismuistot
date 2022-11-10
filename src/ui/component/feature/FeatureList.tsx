@@ -136,6 +136,7 @@ export const FeatureList: React.FC<FeatureListProps> = ({
           )
         }
       })}
+      <button>This is the BUTTON</button>
     </div>
   )
 }
