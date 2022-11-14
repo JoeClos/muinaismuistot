@@ -28,6 +28,7 @@ export const RKYPanel: React.FC<Props> = ({
   onToggleOpen,
   feature
 }) => {
+  console.log(feature)
   const { t } = useTranslation()
   return (
     <ArgisFeatureCollapsePanel
@@ -49,6 +50,8 @@ export const RKYPanel: React.FC<Props> = ({
         )}
         <MuseovirastoLink feature={feature} />
         {isOpen && <EmbeddedModels models={feature.models} />}
+        <button>This is the BUTTON</button>
+
       </form>
     </ArgisFeatureCollapsePanel>
   )

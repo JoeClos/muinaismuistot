@@ -38,6 +38,8 @@ export const MuinaisjaannosAluePanel: React.FC<Props> = ({
           value={t(`data.museovirasto.featureType.${laji}`, laji)}
         />
         <MuseovirastoLink feature={feature} />
+        <button>This is the BUTTON</button>
+
       </form>
     </ArgisFeatureCollapsePanel>
   )
