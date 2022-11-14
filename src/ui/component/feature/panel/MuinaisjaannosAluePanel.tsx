@@ -23,6 +23,7 @@ export const MuinaisjaannosAluePanel: React.FC<Props> = ({
 }) => {
   const { t } = useTranslation()
   const { kohdenimi, kunta, laji } = feature.attributes
+ 
   return (
     <ArgisFeatureCollapsePanel
       titleClickAction={titleClickAction}
@@ -38,8 +39,10 @@ export const MuinaisjaannosAluePanel: React.FC<Props> = ({
           value={t(`data.museovirasto.featureType.${laji}`, laji)}
         />
         <MuseovirastoLink feature={feature} />
-        <button>This is the BUTTON</button>
-
+        <button>Save photo</button>
+        <div style={{background:"red", padding: "2rem"}}>
+          <input type="file"/>
+          </div>
       </form>
     </ArgisFeatureCollapsePanel>
   )

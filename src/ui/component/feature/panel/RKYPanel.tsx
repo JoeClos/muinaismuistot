@@ -50,7 +50,7 @@ export const RKYPanel: React.FC<Props> = ({
         )}
         <MuseovirastoLink feature={feature} />
         {isOpen && <EmbeddedModels models={feature.models} />}
-        <button>This is the BUTTON</button>
+        <button>Save photo</button>
 
       </form>
     </ArgisFeatureCollapsePanel>
