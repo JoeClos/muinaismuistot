@@ -24,8 +24,8 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: npm      
       - run: npm ci
-      - run: npm test
-      - run: npm run build
+      # - run: npm test
+      - run: npm run build:dev
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v1.2
         with:
