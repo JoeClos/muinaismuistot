@@ -38,7 +38,8 @@ export const RKYPanel: React.FC<Props> = ({
   const sparql = 'SELECT%20%3Fitem%20%3FitemLabel%20%3Fcommonscat%20WHERE%20%7B%0A%20%20%20%20%3Fitem%20wdt%3AP4009%20%221560%22%20.%0A%20%20%20%20%3Fitem%20wdt%3AP373%20%3Fcommonscat%20.%0A%20%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22fi%2Cen%22.%20%7D%0A%7D'
   const [query, setQuery] = useState({data : []})
   const openWindow = () => {
-    window.open('https://commons.wikimedia.beta.wmflabs.org/w/index.php?title=Special:UploadWizard&campaign=wlm-fi-rephotography-wikidata&id=Q55025466&descriptionlang=fi&description=Entinen+reaalilyseo&lat=61.49642&lon=23.74801&categories=Schools%7CTampere%7CEducational_institutions', '_blank')
+    window.open(`
+    https://commons.wikimedia.beta.wmflabs.org/w/index.php?title=Special:UploadWizard ${query}`, '_blank')
   }
   
   return (
