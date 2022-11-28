@@ -40,10 +40,6 @@ export const MuinaisjaannosAluePanel: React.FC<Props> = ({
           value={t(`data.museovirasto.featureType.${laji}`, laji)}
         />
         <MuseovirastoLink feature={feature} />
-        <button>Save photo</button>
-        <div style={{background:"red", padding: "2rem"}}>
-          <input type="file"/>
-          </div>
       </form>
     </ArgisFeatureCollapsePanel>
   )
