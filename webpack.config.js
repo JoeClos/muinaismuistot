@@ -8,6 +8,7 @@ const BundleAnalyzerPlugin =
 const SHOW_BUNDLE_ANALYZER = process.env.SHOW_BUNDLE_ANALYZER !== undefined
 
 module.exports = {
+  mode: "development",
   entry: {
     app: "./src/index.ts",
     models: "./src/3d/index.tsx",
